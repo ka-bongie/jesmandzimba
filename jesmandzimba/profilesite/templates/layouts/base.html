@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jesman Dzimba - Curriculum Vitae</title>
+
+<meta name="viewport" content="width=device-width"/>
+<meta name="description" content="The Curriculum Vitae of Jesman Dzimba."/>
+<meta charset="UTF-8">
+
+<link type="text/css" rel="stylesheet" href="{% static 'css/styles.css' %}">
+<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body id="top">
+  <div id="cv" class="instaFade">
+
+    <div class="mainDetails">
+      <div id="headshot" class="quickFade">
+        <img src="{% static 'images/headshot.jpg' %}" alt="Jesman Dzimba" />
+      </div>
+    
+      <div id="name">
+        <h1 class="quickFade delayTwo">Jesman Dzimba</h1>
+        <h2 class="quickFade delayThree">Software Engineer</h2>
+      </div>
+      {% block navContacts %}{% endblock %}
+      <div class="clear"></div>
+    </div>
+
+    {% block content %}{% endblock %}
+  </div>
+
+{% block javascript %}{% endblock %}
+</body>
+</html>

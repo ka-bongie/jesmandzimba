@@ -120,6 +120,7 @@ section:last-child {
 .sectionContent {
 	float: right;
 	width: 72.5%;
+	text-align: justify;
 }
 
 .sectionTitle h1 {

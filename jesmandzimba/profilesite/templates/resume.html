@@ -1,41 +1,20 @@
+{% extends 'layouts/base.html' %}
+
+
+{% block navContacts %}
+<div id="contactDetails" class="quickFade delayFour">
+	<ul>
+		<li><a href="dzjesman@gmail.com" target="_blank">dzjesman@gmail.com</a></li>
+		<li><a href="http://www.jesmandzimba.com">www.jesmandzimba.com</a></li>
+		<li>(+27) 060 381 2851</li>
+	</ul>
+</div>
+{% endblock %}
+
+
+{% block content %}
 {% load static %}
-<!DOCTYPE html>
-<html>
-<head>
-<title>Jesman Dzimba - Curriculum Vitae</title>
 
-<meta name="viewport" content="width=device-width"/>
-<meta name="description" content="The Curriculum Vitae of Jesman Dzimba."/>
-<meta charset="UTF-8">
-
-<link type="text/css" rel="stylesheet" href="{% static 'css/styles.css' %}">
-<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
-
-<!--[if lt IE 9]>
-<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-</head>
-<body id="top">
-<div id="cv" class="instaFade">
-	<div class="mainDetails">
-		<div id="headshot" class="quickFade">
-			<img src="{% static 'images/headshot.jpg' %}" alt="Jesman Dzimba" />
-		</div>
-
-		<div id="name">
-			<h1 class="quickFade delayTwo">Jesman Dzimba</h1>
-			<h2 class="quickFade delayThree">Software Engineer</h2>
-		</div>
-
-		<div id="contactDetails" class="quickFade delayFour">
-			<ul>
-				<li><a href="dzjesman@gmail.com" target="_blank">dzjesman@gmail.com</a></li>
-				<li><a href="http://www.jesmandzimba.com">www.jesmandzimba.com</a></li>
-				<li>(+27) 060 381 2851</li>
-			</ul>
-		</div>
-		<div class="clear"></div>
-	</div>
 
 	<div id="mainArea" class="quickFade delayFive">
 		<section>
@@ -45,7 +24,13 @@
 				</div>
 
 				<div class="sectionContent">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor metus, interdum at scelerisque in, porta at lacus. Maecenas dapibus luctus cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies massa et erat luctus hendrerit. Curabitur non consequat enim. Vestibulum bibendum mattis dignissim. Proin id sapien quis libero interdum porttitor.</p>
+					<p>
+						Jesman Dzimba is a dedicated and open minded Software Engineer with two years of experience working as a web developer.
+						She give her all in any given task and never gets limited by her lack of knowhow on any given taks. She goes out of
+							way to try and learn new skills and makes an effort anywhere she can rather than giving up or turning down unrelated work.
+							She is always wannting to learn new things and has recently shifted her focus from Php to Python and is hoping to pursue
+							a successful career building solution using Python.
+					</p>
 				</div>
 			</article>
 			<div class="clear"></div>
@@ -62,11 +47,10 @@
 					<h2>Junior Web Developer</h2>
 					<p class="subDetails">June 2018 - Present</p>
 					<p>
-						Fullstack developer using mainly laravel framework. Developed projects using PHP for the backend to interact with a mysql database and also the connect to third party
-						APIs such as Vetro and Google Maps.
-						In one of my projects i used Knocjout.js on the frontend in order to replicate some functionality that is found
-						in an Excel spreadsheet, e.g, interface of rows and columns, copying and pasting rows together with their data and use of functions on some row cells. I have also worked using Vue.js
-						in a project that i inherited from another developer.
+						Fullstack developer using Laravel, which is a Php framework. All of the projects interacted with a Mysql database.
+						Some of third the party APIS that i have integrated with some of the projects include Vetro.io and Google Maps.
+						Frontend technologies that i used include Knocjout.js where we tried to replicate some excel spreadsheet
+						functionality such as duplication of data from one. Vue.js is also a frontend technology that i have the oportunity to use.
 					</p>
 				</article>
 			</div>
@@ -81,11 +65,10 @@
 
 			<div class="sectionContent">
 				<ul class="keySkills">
-					<li>Php</li>
-					<li>Python</li>
+					<li>Php/Laravel</li>
+					<li>Python/Django</li>
 					<li>Docker</li>
-					<li>JavaScript</li>
-					<li>Html5</li>
+					<li>Html5/CSS</li>
 				</ul>
 			</div>
 			<div class="clear"></div>
@@ -100,20 +83,24 @@
 				<article>
 					<h2>University of Fort Hare</h2>
 					<p class="subDetails">MSc Computer Science / Bsc (hons) Computer Sceince</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies massa et erat luctus hendrerit. Curabitur non consequat enim.</p>
+					<p></p>
 				</article>
 
 				<article>
 					<h2>University of Venda</h2>
 					<p class="subDetails">Bsc Computer Science and Mathematics</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies massa et erat luctus hendrerit. Curabitur non consequat enim.</p>
+					<p></p>
 				</article>
 			</div>
 			<div class="clear"></div>
 		</section>
 
 	</div>
-</div>
+
+{% endblock %}
+
+{% block  javascript %}
+
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -123,5 +110,5 @@ var pageTracker = _gat._getTracker("UA-3753241-1");
 pageTracker._initData();
 pageTracker._trackPageview();
 </script>
-</body>
-</html>
+
+{% endblock %}
