@@ -11,7 +11,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
 display:block;
 }
 
-html, body {background: #d3d3d3; font-family: 'Lato', helvetica, arial, sans-serif; font-size: 16px; color: #222;}
+html, body {background: #d3d3d3 !important; font-family: 'Lato', helvetica, arial, sans-serif; font-size: 16px; color: #222;}
 
 .clear {clear: both;}
 
@@ -353,4 +353,34 @@ section:last-child {
 	-webkit-animation-delay: 0, 2.5s;
 	-moz-animation-delay: 0, 2.5s;
 	animation-delay: 0, 2.5s;
+}
+
+.homeNavItems {
+	margin: 10px 0 20px 0;
+}
+
+#collapsePortfolio p{
+	margin-bottom: 30px !important;
+}
+
+.technologies,  .technologies ul, .technologies li{
+	padding: 1px !important;
+}
+
+.portfolioSection {
+	text-align: justify;
+}
+
+.portfolioSection h5{
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	font-style: italic;
+	font-size: 0.5em;
+	color: #9370DB;
+}
+
+.portfolioTitle h1 {
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	font-style: italic;
+	font-size: 1.5em;
+	color: #9370DB;
 }
