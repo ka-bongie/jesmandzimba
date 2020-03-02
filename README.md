@@ -1,2 +1,2 @@
 # jesmandzimba
-This repository is for code regrading my resume and projects
+This repository is to display the implementation of my profile site
