@@ -23,5 +23,8 @@ def download_resume(request):
 			return response
 	raise Http404
 
+def new_header(request):
+	return render(request, 'new_header.html', {})
+
 
 # download_resume()

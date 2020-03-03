@@ -10,4 +10,5 @@ urlpatterns = [
     path('resume', views.resume, name="resume"),
 	path('portfolio', views.portfolio, name="portfolio"),
 	path('resume/download', views.download_resume, name="download_resume"),
+	path('new_header', views.new_header, name="new_header"),
 ]
