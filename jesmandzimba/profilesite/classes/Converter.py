@@ -9,7 +9,9 @@ import os.path
 
 # Class that does various convertions.
 class Convert:
-	settings.configure()
+	if not settings.configured:
+    	settings.configure()
+		
 	# Convert html to pdf
 	def html_to_pdf(self, template_src, context_dict):
 		try:
