@@ -18,16 +18,32 @@
 <![endif]-->
 </head>
 <body id="top">
-  <div id="cv" class="instaFade">
+  <div id="header" class="instaFade">
 
-    <div class="mainDetails">
+    <div class="headerDetails">
       <div id="headshot" class="quickFade">
         <img src="{% static 'images/headshot.jpg' %}" alt="Jesman Dzimba" />
       </div>
 
-      <div id="name">
+      <div id="headerName">
         <h1 class="quickFade delayTwo">Jesman Dzimba</h1>
-        <h2 class="quickFade delayThree">Software Engineer</h2>
+        <h2 class="quickFade delayThree">
+			<ul class="headerMenu">
+				<li>software engineer </li>
+				<li>· computer science </li>
+				<li> · university of forthare</li>
+			</ul>
+		</h2>
+		<h3>
+			<ul class="headerMenu">
+				<li>(+27) 060 381 2851 </li>
+				<li><a href="mailto:dzjesman@gmail.com" alt="Jesman Dzimba Email">| dzjesman@gmail.com  </a></li>
+				<li><a href="http://www.kabongi.me" alt="Jesman Dzimba Website" target="_blank">| www.kabongi.me  </a></li>
+				<li><a href="https://github.com/ka-bongie/" alt="Jesman Dzimba Github" target="_blank">| github  </a></li>
+				<li> <a href="http://www.linkedin.com/in/jesman-dzimba-935246a2" alt="Jesman Dzimba LinkedIn" target="_blank"> | LinkedIn </a></li>
+			</ul>
+
+		<h3>
       </div>
       {% block navContacts %}{% endblock %}
       <div class="clear"></div>

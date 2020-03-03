@@ -1,4 +1,4 @@
-{% extends 'layouts/base0.html' %}
+{% extends 'layouts/base.html' %}
 
 
 {% block content %}
@@ -9,23 +9,23 @@
 		<section>
 			<article>
 				<div class="row sectionTitle0">
-					<div class="col-2">
+					<div class="col-md-2">
 						<h4>About me </h4>
 					</div>
-					<div class="col-10">
+					<div class="col-md-10">
 						<hr>
 					</div>
 				</div>
 
 				<div class="row sectionContent0">
-					<div class="col-12">
+					<div class="col-12 aboutMeList">
 						<ul>
 							<li>
 								<div class="row">
-									<div class="col-2">
+									<div class="col-md-2">
 										<strong>Programming</strong>
 									</div>
-									<div class="col-10">
+									<div class="col-md-10">
 										<ul class="headerMenu">
 											<li>Python </li>
 											<li>· Php </li>
@@ -36,10 +36,10 @@
 							</li>
 							<li>
 								<div class="row">
-									<div class="col-2">
+									<div class="col-md-2">
 										<strong>Analytics</strong>
 									</div>
-									<div class="col-10">
+									<div class="col-md-10">
 										<ul class="headerMenu">
 											<li>MySQL </li>
 										</ul>
@@ -48,10 +48,10 @@
 							</li>
 							<li>
 								<div class="row">
-									<div class="col-2">
+									<div class="col-md-2">
 										<strong>Web/Media</strong>
 									</div>
-									<div class="col-10">
+									<div class="col-md-10">
 										<ul class="headerMenu">
 											<li>Django </li>
 											<li>· Laravel </li>
@@ -71,58 +71,33 @@
 		<section>
 			<article>
 				<div class="row sectionTitle0">
-					<div class="col-2">
+					<div class="col-md-2">
 						<h4>Experience </h4>
 					</div>
-					<div class="col-10">
+					<div class="col-md-10">
 						<hr>
 					</div>
 				</div>
 
 				<div class="row sectionContent0">
-					<div class="col-12">
+					<div class="col-sm-6">
+						<h4>Baseline Software</h4>
+						<span class="headerSubTitle">Web Developer - Fullstack</span>
+					</div>
+					<div class="col-sm-6">
+						<span class="city">Tokai, CT</span>
+						<span class="date">Jun. 2018 – Now </span>
+					</div>
+
+					<div class="col-12 experienceList">
 						<ul>
-							<li>
-								<div class="row">
-									<div class="col-2">
-										<strong>Programming</strong>
-									</div>
-									<div class="col-10">
-										<ul class="headerMenu">
-											<li>Python </li>
-											<li>· Php </li>
-											<li> · Java</li>
-										</ul>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="row">
-									<div class="col-2">
-										<strong>Analytics</strong>
-									</div>
-									<div class="col-10">
-										<ul class="headerMenu">
-											<li>MySQL </li>
-										</ul>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="row">
-									<div class="col-2">
-										<strong>Web/Media</strong>
-									</div>
-									<div class="col-10">
-										<ul class="headerMenu">
-											<li>Django </li>
-											<li>· Laravel </li>
-											<li> ·  HTML/CSS</li>
-											<li> ·  JavaScript /Vue,js/Knockout.js</li>
-										</ul>
-									</div>
-								</div>
-							</li>
+								<li>Worked in a small team of two to develop Laravel based web applications.</li>
+								<li>Querying data from a MySQL database.</li>
+								<li>Integrating our application with third party API such as Vetro.io and Google Map API.</li>
+								<li>Liasing with client regarding work that need to be done.</li>
+								<li>Handling and implementing work that was beyond our core languages such as; developing an inhouse Xamarin
+app and pyhton scripts at the request of a client when there wasn’t work to do on the main stream.</li>
+								<li>Learning responsibility of handling a project and giving deliverables on time</li>
 						</ul>
 					</div>
 				</div>
@@ -131,21 +106,33 @@
 		</section>
 
 
-
 		<section>
 			<article>
-				<div class="sectionTitle">
-					<h1>Personal Profile</h1>
+				<div class="row sectionTitle0">
+					<div class="col-md-2">
+						<h4>Internships </h4>
+					</div>
+					<div class="col-md-10">
+						<hr>
+					</div>
 				</div>
 
-				<div class="sectionContent">
-					<p>
-						Jesman Dzimba is a dedicated and open minded Software Engineer with two years of experience working as a web developer.
-						She give her all in any given task and never gets limited by her lack of knowhow on any given taks. She goes out of
-							way to try and learn new skills and makes an effort anywhere she can rather than giving up or turning down unrelated work.
-							She is always wannting to learn new things and has recently shifted her focus from Php to Python and is hoping to pursue
-							a successful career building solution using Python.
-					</p>
+				<div class="row sectionContent0">
+					<div class="col-sm-6">
+						<h4>Khanyisa Real Systems</h4>
+						<span class="headerSubTitle">Junior Developer - Intern Team</span>
+					</div>
+					<div class="col-sm-6">
+						<span class="city">Rondebosch, CT</span>
+						<span class="date">Jan. 2018 – Feb. 2018 </span>
+					</div>
+
+					<div class="col-12 experienceList">
+						<ul>
+								<li>Learning Agile and Scrum processes, Extreme Programming, Git processes, Test Driven Development, Domain
+Driven Design, Single Page Apps.</li>
+						</ul>
+					</div>
 				</div>
 			</article>
 			<div class="clear"></div>
@@ -153,63 +140,61 @@
 
 
 		<section>
-			<div class="sectionTitle">
-				<h1>Work Experience</h1>
-			</div>
+			<article>
+				<div class="row sectionTitle0">
+					<div class="col-md-2">
+						<h4>Education </h4>
+					</div>
+					<div class="col-md-10">
+						<hr>
+					</div>
+				</div>
 
-			<div class="sectionContent">
-				<article>
-					<h2>Junior Web Developer</h2>
-					<p class="subDetails">June 2018 - Present</p>
-					<p>
-						Fullstack developer using Laravel, which is a Php framework. All of the projects interacted with a Mysql database.
-						Some of third the party APIS that i have integrated with some of the projects include Vetro.io and Google Maps.
-						Frontend technologies that i used include Knocjout.js where we tried to replicate some excel spreadsheet
-						functionality such as duplication of data from one. Vue.js is also a frontend technology that i have the oportunity to use.
-					</p>
-				</article>
-			</div>
+				<div class="row sectionContent0">
+					<div class="col-sm-6">
+						<h4>University of Forthare</h4>
+						<span class="headerSubTitle">Msc Computer Science</span>
+					</div>
+					<div class="col-sm-6">
+						<span class="city">Alice, EC</span>
+						<span class="date">Feb. 2015 – May 2017 </span>
+					</div>
+				</div>
+			</article>
 			<div class="clear"></div>
 		</section>
-
+		<br>
 
 		<section>
-			<div class="sectionTitle">
-				<h1>Key Skills</h1>
-			</div>
+			<article>
+				<div class="row sectionTitle0">
+					<div class="col-md-2">
+						<h4>Education </h4>
+					</div>
+					<div class="col-md-10">
+						<hr>
+					</div>
+				</div>
 
-			<div class="sectionContent">
-				<ul class="keySkills">
-					<li>Php/Laravel</li>
-					<li>Python/Django</li>
-					<li>Docker</li>
-					<li>Html5/CSS</li>
-				</ul>
-			</div>
+				<div class="row sectionContent0">
+					<div class="col-sm-6">
+						<h4>University of Forthare</h4>
+						<span class="headerSubTitle">Bsc (Hons) Computer Science</span>
+					</div>
+					<div class="col-sm-6">
+						<span class="city">Alice, EC</span>
+						<span class="date">Feb. 20154 – May 2015 </span>
+					</div>
+
+					<div class="col-12 experienceList">
+						<ul>
+								<li>Cum laude.</li>
+						</ul>
+					</div>
+				</div>
+			</article>
 			<div class="clear"></div>
 		</section>
-
-		<section>
-			<div class="sectionTitle">
-				<h1>Education</h1>
-			</div>
-
-			<div class="sectionContent">
-				<article>
-					<h2>University of Fort Hare</h2>
-					<p class="subDetails">MSc Computer Science / Bsc (hons) Computer Sceince</p>
-					<p></p>
-				</article>
-
-				<article>
-					<h2>University of Venda</h2>
-					<p class="subDetails">Bsc Computer Science and Mathematics</p>
-					<p></p>
-				</article>
-			</div>
-			<div class="clear"></div>
-		</section>
-
 	</div>
 
 {% endblock %}
