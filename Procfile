@@ -1,1 +1,1 @@
-web: gunicorn jesmandzimba.wsgi
+web: gunicorn jesmandzimba.wsgi --pythonpath jesmandzimba --log-file -
