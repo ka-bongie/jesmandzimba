@@ -1,79 +1,209 @@
 {% extends 'layouts/base.html' %}
 
+{% load static %}
+
 {% block content %}
-
-<div id="mainArea" class="quickFade delayFive">
-  <section>
-    <article>
-
-      <div class="row sectionTitle0">
-        <div class="col-sm-3">
-          <h4>Personal Profile </h4>
+<!-- Masthead-->
+<header class="masthead bg-primary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+        <!-- Masthead Avatar Image-->
+        <!-- <img class="masthead-avatar mb-5 img img-circle" src="{% static '/images/headshot.png' %}" alt="" /> -->
+        <!-- Masthead Heading-->
+        <h1 class="masthead-heading text-uppercase mb-0">Software Engineer</h1>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
         </div>
+        <!-- Masthead Subheading-->
+        <p class="masthead-subheading font-weight-light mb-0">Get to know me a little more!</p>
+    </div>
+</header>
+<!-- Portfolio Section-->
+{% include 'home/portfolio-section.html' %}
+<!-- About Section-->
+{% include 'home/about-section.html'%}
+<!-- Contact Section-->
+{% include 'home/contact-section.html'%}
+
+  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
+  <div class="scroll-to-top d-lg-none position-fixed">
+      <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a>
+  </div>
+  <!-- Portfolio Modals--><!-- Portfolio Modal 1-->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+      <div class="modal-dialog modal-xl" role="document">
+          <div class="modal-content">
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true"><i class="fas fa-times"></i></span>
+              </button>
+              <div class="modal-body text-center">
+                  <div class="container">
+                      <div class="row justify-content-center">
+                          <div class="col-lg-8">
+                              <!-- Portfolio Modal - Title-->
+                              <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
+                              <!-- Icon Divider-->
+                              <div class="divider-custom">
+                                  <div class="divider-custom-line"></div>
+                                  <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                  <div class="divider-custom-line"></div>
+                              </div>
+                              <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="" /><!-- Portfolio Modal - Text-->
+                              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                              <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </div>
-
-      <div class="row justify-content-md-center sectionContent0">
-        <div class="col-md-9">
-          Jesman Dzimba is a dedicated and open minded Software Engineer with two years of experience working as a web developer.
-          She give her all in any given task and never gets limited by her lack of knowhow on any given taks. She goes out of
-            way to try and learn new skills and makes an effort anywhere she can rather than giving up or turning down unrelated work.
-            She is always wannting to learn new things and has recently shifted her focus from Php to Python and is hoping to pursue
-            a successful career building solution using Python.
-        </div>
+  </div>
+  <!-- Portfolio Modal 2-->
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
+      <div class="modal-dialog modal-xl" role="document">
+          <div class="modal-content">
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true"><i class="fas fa-times"></i></span>
+              </button>
+              <div class="modal-body text-center">
+                  <div class="container">
+                      <div class="row justify-content-center">
+                          <div class="col-lg-8">
+                              <!-- Portfolio Modal - Title-->
+                              <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Tasty Cake</h2>
+                              <!-- Icon Divider-->
+                              <div class="divider-custom">
+                                  <div class="divider-custom-line"></div>
+                                  <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                  <div class="divider-custom-line"></div>
+                              </div>
+                              <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="" /><!-- Portfolio Modal - Text-->
+                              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                              <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </div>
-    </article>
-    <div class="clear"></div>
-  </section>
-
-  <section>
-    <article>
-	    <div class="accordion" id="accordionResume">
-		  	<div class="row homeNavItems">
-				<div class="col col-sm-6">
-					<div class="card-header2" id="headingOne">
-					  <h2 class="mb-0">
-						<button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#collapseResume" aria-expanded="true" aria-controls="collapseResume">
-							Resume
-						</button>
-					  </h2>
-					</div>
-				</div>
-				<div class="col col-sm-6">
-					<div id="collapseResume" class="collapse show2" aria-labelledby="headingOne" data-parent="#accordionResume">
-						<div class="card-body">
-							<p> Get or view a generic version of my resume</p>
-							<a href="{%url 'resume' %}" class="btn btn-primary btn-sm" target="_blank"> View Online </a>
-							<a href="{% url 'download_resume' %}" class="btn btn-link" target="_blank"> Download PDF </a>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="row homeNavItems">
-				<div class="col col-sm-6">
-					<div class="card-header2" id="headingPortfolio">
-					  <h2 class="mb-0">
-					    <button class="btn btn btn-outline-primary collapsed" type="button" data-toggle="collapse" data-target="#collapsePortfolio" aria-expanded="false" aria-controls="collapsePortfolio">
-							Portfolio
-					    </button>
-					  </h2>
-					</div>
-				</div>
-				<div class="col col-sm-6">
-					<div id="collapsePortfolio" class="collapse" aria-labelledby="headingPortfolio" data-parent="#accordionResume">
-					  <div class="card-body">
-						<p class="text-justify"> This is where i list all the relevant projects that i have worked on up to so far. Each project has a link to my github account for the source code. I have decided so include
-							this site as a list of my projects incase there is any one interested to learn a certain implementation of a feature on this site....(You never know!)
-						</p>
-						<a href="{% url 'portfolio' %}" class="btn btn-primary btn-sm" target="_blank"> View Portfolio </a>
-					  </div>
-					</div>
-				</div>
-			</div>
-		</div>
-    </article>
-    <div class="clear"></div>
-  </section>
-</div>
+  </div>
+  <!-- Portfolio Modal 3-->
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+      <div class="modal-dialog modal-xl" role="document">
+          <div class="modal-content">
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true"><i class="fas fa-times"></i></span>
+              </button>
+              <div class="modal-body text-center">
+                  <div class="container">
+                      <div class="row justify-content-center">
+                          <div class="col-lg-8">
+                              <!-- Portfolio Modal - Title-->
+                              <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Circus Tent</h2>
+                              <!-- Icon Divider-->
+                              <div class="divider-custom">
+                                  <div class="divider-custom-line"></div>
+                                  <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                  <div class="divider-custom-line"></div>
+                              </div>
+                              <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="" /><!-- Portfolio Modal - Text-->
+                              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                              <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Portfolio Modal 4-->
+  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
+      <div class="modal-dialog modal-xl" role="document">
+          <div class="modal-content">
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true"><i class="fas fa-times"></i></span>
+              </button>
+              <div class="modal-body text-center">
+                  <div class="container">
+                      <div class="row justify-content-center">
+                          <div class="col-lg-8">
+                              <!-- Portfolio Modal - Title-->
+                              <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Controller</h2>
+                              <!-- Icon Divider-->
+                              <div class="divider-custom">
+                                  <div class="divider-custom-line"></div>
+                                  <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                  <div class="divider-custom-line"></div>
+                              </div>
+                              <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="" /><!-- Portfolio Modal - Text-->
+                              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                              <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Portfolio Modal 5-->
+  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="portfolioModal5Label" aria-hidden="true">
+      <div class="modal-dialog modal-xl" role="document">
+          <div class="modal-content">
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true"><i class="fas fa-times"></i></span>
+              </button>
+              <div class="modal-body text-center">
+                  <div class="container">
+                      <div class="row justify-content-center">
+                          <div class="col-lg-8">
+                              <!-- Portfolio Modal - Title-->
+                              <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
+                              <!-- Icon Divider-->
+                              <div class="divider-custom">
+                                  <div class="divider-custom-line"></div>
+                                  <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                  <div class="divider-custom-line"></div>
+                              </div>
+                              <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="" /><!-- Portfolio Modal - Text-->
+                              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                              <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Portfolio Modal 6-->
+  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+      <div class="modal-dialog modal-xl" role="document">
+          <div class="modal-content">
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true"><i class="fas fa-times"></i></span>
+              </button>
+              <div class="modal-body text-center">
+                  <div class="container">
+                      <div class="row justify-content-center">
+                          <div class="col-lg-8">
+                              <!-- Portfolio Modal - Title-->
+                              <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
+                              <!-- Icon Divider-->
+                              <div class="divider-custom">
+                                  <div class="divider-custom-line"></div>
+                                  <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                  <div class="divider-custom-line"></div>
+                              </div>
+                              <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="" /><!-- Portfolio Modal - Text-->
+                              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                              <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
 
 {% endblock %}
