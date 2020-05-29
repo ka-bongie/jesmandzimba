@@ -11,7 +11,8 @@ html, body {
 #header {
 	width: 90%;
 	max-width: 900px;
-	background: #f3f3f3;
+	/* background: #f3f3f3; */
+	background: white;
 	margin: 60px auto;
 }
 
@@ -340,4 +341,47 @@ section:last-child {
 	font-style: italic;
 	font-size: 1.5em;
 	color: #9370DB;
+}
+
+#mainArea .aboutme{
+		/* background-image: url('/static/images/crumbled-paper.png'); */
+		/* background: #f3f3f3; */
+		font-size: 18px;
+}
+
+#mainArea .whycs{
+	background-image: url('/static/images/old-paper.png');
+	background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 4%;
+	font-size: larger;
+	color: white !important;
+}
+
+#mainArea .whycs .sectionContent{
+	text-align: center;
+	color: purple;
+	padding-top: 150px;
+	font-weight: 600;
+}
+
+.footer{
+	height: 80px;
+	margin: 40px 0 10px  0;
+	background-color: #9370DB;
+}
+
+.footer .footer-copyright {
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer .footer-copyright .copyright {
+    text-align: center;
+    float: none !important;
+    margin: 0;
+}
+.footer .text-center {
+    text-align: center;
 }

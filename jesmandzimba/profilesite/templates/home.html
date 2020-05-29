@@ -3,77 +3,9 @@
 {% block content %}
 
 <div id="mainArea" class="quickFade delayFive">
-  <section>
-    <article>
-
-      <div class="row sectionTitle0">
-        <div class="col-sm-3">
-          <h4>Personal Profile </h4>
-        </div>
-      </div>
-
-      <div class="row justify-content-md-center sectionContent0">
-        <div class="col-md-9">
-          Jesman Dzimba is a dedicated and open minded Software Engineer with two years of experience working as a web developer.
-          She give her all in any given task and never gets limited by her lack of knowhow on any given taks. She goes out of
-            way to try and learn new skills and makes an effort anywhere she can rather than giving up or turning down unrelated work.
-            She is always wannting to learn new things and has recently shifted her focus from Php to Python and is hoping to pursue
-            a successful career building solution using Python.
-        </div>
-      </div>
-    </article>
-    <div class="clear"></div>
-  </section>
-
-  <section>
-    <article>
-	    <div class="accordion" id="accordionResume">
-		  	<div class="row homeNavItems">
-				<div class="col col-sm-6">
-					<div class="card-header2" id="headingOne">
-					  <h2 class="mb-0">
-						<button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#collapseResume" aria-expanded="true" aria-controls="collapseResume">
-							Resume
-						</button>
-					  </h2>
-					</div>
-				</div>
-				<div class="col col-sm-6">
-					<div id="collapseResume" class="collapse show2" aria-labelledby="headingOne" data-parent="#accordionResume">
-						<div class="card-body">
-							<p> Get or view a generic version of my resume</p>
-							<a href="{%url 'resume' %}" class="btn btn-primary btn-sm" target="_blank"> View Online </a>
-							<a href="{% url 'download_resume' %}" class="btn btn-link" target="_blank"> Download PDF </a>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="row homeNavItems">
-				<div class="col col-sm-6">
-					<div class="card-header2" id="headingPortfolio">
-					  <h2 class="mb-0">
-					    <button class="btn btn btn-outline-primary collapsed" type="button" data-toggle="collapse" data-target="#collapsePortfolio" aria-expanded="false" aria-controls="collapsePortfolio">
-							Portfolio
-					    </button>
-					  </h2>
-					</div>
-				</div>
-				<div class="col col-sm-6">
-					<div id="collapsePortfolio" class="collapse" aria-labelledby="headingPortfolio" data-parent="#accordionResume">
-					  <div class="card-body">
-						<p class="text-justify"> This is where i list all the relevant projects that i have worked on up to so far. Each project has a link to my github account for the source code. I have decided so include
-							this site as a list of my projects incase there is any one interested to learn a certain implementation of a feature on this site....(You never know!)
-						</p>
-						<a href="{% url 'portfolio' %}" class="btn btn-primary btn-sm" target="_blank"> View Portfolio </a>
-					  </div>
-					</div>
-				</div>
-			</div>
-		</div>
-    </article>
-    <div class="clear"></div>
-  </section>
+{% include 'portfolio/aboutme.html' %}
+{% include 'portfolio/links.html' %}
+{% include 'portfolio/whycs.html' %}
 </div>
 
 {% endblock %}

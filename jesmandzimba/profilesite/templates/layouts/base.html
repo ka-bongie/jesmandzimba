@@ -48,8 +48,16 @@
       {% block navContacts %}{% endblock %}
       <div class="clear"></div>
     </div>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{% url 'home' %}">home</a></li>
+          {% block breadcrumbs %}{% endblock %}
+      </ol>
+    </nav>
 
     {% block content %}{% endblock %}
+
+    {%  include 'layouts/footer.html' %}
   </div>
 
 {% block javascript %}{% endblock %}

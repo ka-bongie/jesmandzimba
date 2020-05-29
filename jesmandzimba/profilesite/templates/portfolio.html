@@ -1,8 +1,49 @@
 {% extends 'layouts/base.html' %}
 
+  {% block breadcrumbs %}
+    <li class="breadcrumb-item active" aria-current="page">portfolio</li>
+	{% endblock %}
+
 {% block content %}
 
 <div id="mainArea" class="quickFade delayFive">
+
+	<section>
+		<article>
+			<div class="portfolioSection sectionTitle0">
+
+				<div class="portfolioTitle">
+					<h4>Teacher Management Application</h4>
+				</div>
+
+				<div class="technologies">
+					<ul class="headerMenu portfolioSkills">
+						<li>Java SE |</li>
+						<li>MySQL |</li>
+						<li>jUnit </li>
+					</ul>
+				</div>
+
+				<p>
+					This is a desktop application that helps a teacher manage student assessment scores and attendance.
+					This project used a TDD approach where i created models. For each model i created test cases to makes
+					sure that the behavior is correct. Working this way helped me confirm whether or not my implementation
+					worked as expected. More especially with connection to the database.
+
+					The project currently does not have any UX as yet because i wanted to make sure that the backend works fine
+					before introducing frontend implementation. This helps me focus on the problem at a time instead of troubleshooting
+					both frontend implementation and well as backend implementation.
+				</p>
+
+				<h5><a href="https://github.com/ka-bongie/teacher-management-system" class="btn btn-link" target="_blank">Go to GIT </a></h5>
+
+			</div>
+		</article>
+		<div class="clear"></div>
+
+	</section>
+
+
 	<section>
 		<article>
 			<div class="portfolioSection sectionTitle0">
@@ -13,29 +54,31 @@
 
 				<div class="technologies">
 					<ul class="headerMenu portfolioSkills">
-						<li>Django </li>
-						<li>· Html5/css </li>
+						<li>Django |</li>
+						<li>Html5/css </li>
 					</ul>
 				</div>
 
 				<p>
-					Online profile that demostrates all the relevant projects that i have done, linking the use to github source code per project.
-					This was my very first python project when i decided to transition from Php to Python. Instead of learning python theoratically,
-					 i thought it would be good way to learn by creating a this platform.
+					Online platform that helps showcase some of the projects that i have done. It also gives some information about myself that
+					may not be contained in my resume or cover letters.
 				</p>
 				<h6>Version 1.0</h6>
-				<p>Static website with all the descriptions hard coded on the html templates. This was the MVP</p>
+				<p>All text is hardcoded on the html templates. Nothing gets pulled from the database or any external storage or source.</p>
 
 				<h6>Version 1.1</h6>
-				<p>This has not been implemeted yet, but the work will involve the resume and the projects pulling data from a database. Not sure if this is necessary for
-				such a site. Still weighing options.</p>
+				<p>Not been implemeted yet. This will involve pulling information from a form of storage. Idea when my portfolio gets bigger
+				in terms of content that need to be displayed or how frequent i need to undate my details.</p>
 
-				<h5><a href="https://github.com/ka-bongie/jesmandzimba.git" class="btn btn-link" target="_blank"> View Source </a></h5>
+				<h5><a href="https://github.com/ka-bongie/jesmandzimba.git" class="btn btn-link" target="_blank"> Go to GIT </a></h5>
 
 			</div>
 		</article>
 		<div class="clear"></div>
 
 	</section>
+
+
+
 </div>
 {% endblock %}
